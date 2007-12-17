@@ -15,7 +15,6 @@ Source:         http://www.cpan.org/modules/by-module/Crypt/%{module}-%{version}
 Buildrequires:	perl-devel
 %endif
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This code is a Perl language implementation of the Automated Password Generator
