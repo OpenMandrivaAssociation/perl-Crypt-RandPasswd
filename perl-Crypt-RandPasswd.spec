@@ -1,7 +1,7 @@
 %define module	Crypt-RandPasswd
 %define name	perl-%{module}
 %define version 0.02
-%define release %mkrel 6
+%define release %mkrel 8
 
 Name:		%{name}
 Version:	%{version}
