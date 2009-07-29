@@ -1,21 +1,21 @@
-%define module	Crypt-RandPasswd
-%define name	perl-%{module}
-%define version 0.02
-%define release %mkrel 8
+%define upstream_name	 Crypt-RandPasswd
+%define upstream_version 0.02
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	Random password generator based on FIPS-181
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/Crypt/%{module}-%{version}.tar.bz2
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Crypt/%{upstream_name}-%{upstream_version}.tar.bz2
+
 %if %{mdkversion} < 1010
 Buildrequires:	perl-devel
 %endif
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This code is a Perl language implementation of the Automated Password Generator
@@ -27,7 +27,7 @@ obtained from this program are logically equivalent to those produced by the
 standard.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor < /dev/null
@@ -48,5 +48,3 @@ rm -rf %{buildroot}
 %doc Changes README
 %{perl_vendorlib}/Crypt
 %{_mandir}/*/*
-
-
