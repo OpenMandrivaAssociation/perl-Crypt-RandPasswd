@@ -1,15 +1,15 @@
 %define upstream_name	 Crypt-RandPasswd
-%define upstream_version 0.02
+%define upstream_version 0.03
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 0.03
+Release:	1
 
 Summary:	Random password generator based on FIPS-181
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Crypt/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://www.cpan.org/modules/by-module/Crypt/Crypt-RandPasswd-0.03.tar.gz
 
 BuildRequires:	perl-devel
 BuildArch:	noarch
@@ -85,4 +85,5 @@ make test
 
 * Sun Feb 01 2004 Guillaume Rousse <guillomovitch@mandrake.org> 0.02-1mdk
 - first mdk release
+
 
