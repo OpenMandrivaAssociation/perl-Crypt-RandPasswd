@@ -1,4 +1,5 @@
 removed_sources:
   Crypt-RandPasswd-0.02.tar.bz2: 1c4050f609477cf82b5c97b83a9ac85f018bbd4e
-sources:
   Crypt-RandPasswd-0.03.tar.gz: 17314154665ac64a8b69299725b4b60a4063e4b7
+sources:
+  Crypt-RandPasswd-0.04.tar.gz: 03a0dfa3d08876b56588f9e25e876a4a5bf77988
