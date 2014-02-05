@@ -1,5 +1,5 @@
 %define upstream_name	 Crypt-RandPasswd
-%define upstream_version 0.04
+%define upstream_version 0.05
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -85,6 +85,7 @@ make test
 
 * Sun Feb 01 2004 Guillaume Rousse <guillomovitch@mandrake.org> 0.02-1mdk
 - first mdk release
+
 
 
 
